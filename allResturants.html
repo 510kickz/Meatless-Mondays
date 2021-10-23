@@ -17,15 +17,19 @@
     crossorigin=""></script>
     <style>
         #titleBody {
+            margin-bottom: 40px;
             text-align: center;
         }
         #mapid { 
-            height: 65vh; 
-            width: 65%;
+            height: 50vh; 
+            width: 40%;
+            margin-right: 150px;
             text-align: left;
         }
         p {text-align: right;}
         #btns {
+            margin-left: 15px;
+            margin-right: 15px;
             margin-bottom: 25%;
             text-align: center
         }
@@ -46,16 +50,16 @@
     <nav id="navBar"class="navbar navbar-expand-lg navbar-light bg-grey">
         <a href="index.html">
             <img src="./Images/house.svg" alt="" width="30" height="24">
-        </a> |
+        </a> 
         <a href="allResturants.html">
             <img src="./Images/locationIcon.svg" alt="" width="30" height="24">
-        </a> |
-        <a href='about.html'>
+        </a> 
+        <a href='index.html'>
             <img src="./Images/question.svg" alt="" width="30" height="24">
-        </a> |
+        </a> <!--
         <a href='contact.html'>
             <img src="./Images/contact.svg" alt="" width="30" height="24">
-        </a>
+        </a> -->
     </nav>
     <br>
     <h1 id="titleBody" class="font-black">Map of meatless restaurants in Berkeley, near Berkeley High</h1>
@@ -64,32 +68,33 @@
     <div class='float-container'>
 
             <div id='btns'class="px-50 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 float-child1">
-                <form>
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='loxBagel' value='Lox Stock and Bagel'>
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='sliver' value='Sliver'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='toss' value='Toss'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='chipotle' value='Chipotle'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='happy' value='Happy Hooligans'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='tamonTea' value='Tamon tea'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='topDog' value='Top dog'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='falafel' value='Flying falafel'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='ikes' value='Ike’s'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='plearn' value='Little Plearn'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='bsCafe' value='Bagel street cafe'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='starbucks' value='Starbucks'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='peets' value='Peet’s'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='ezStop' value='EZ Stop'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='mcD' value='McDonalds'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='imm' value='Imm'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='TheButchersSon' value='The Butchers Son'>
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='arinells' value='Arinell’s'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='sushiSecrets' value='Sushi secrets'>
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='crave' value='Crave'> 
-                    <input type='submit' class="bg-red-400 font-bold hover:bg-red-500 border-b-4 border-red-600 text-white py-2 px-4 rounded-full" id='barbarian' value='Barbarian'> 
+                <form class="space-y-1.5">
+                    <!--class="bg-red-400 font-bold hover:bg-red-500 hover:-translate-y-0.5 transform transition border-b-4 border-red-600 text-white py-2 px-4 rounded-full"-->
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='loxBagel' value='Lox Stock and Bagel'>
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='sliver' value='Sliver'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='toss' value='Toss'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='chipotle' value='Chipotle'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='happy' value='Happy Hooligans'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='tamonTea' value='Tamon tea'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='topDog' value='Top dog'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='falafel' value='Flying falafel'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='ikes' value='Ike’s'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='plearn' value='Little Plearn'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='bsCafe' value='Bagel street cafe'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='starbucks' value='Starbucks'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='peets' value='Peet’s'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='ezStop' value='EZ Stop'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='mcD' value='McDonalds'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='imm' value='Imm'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='TheButchersSon' value='The Butchers Son'>
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='arinells' value='Arinell’s'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='sushiSecrets' value='Sushi secrets'>
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='crave' value='Crave'> 
+                    <input type='submit' class="bg-blue-700 font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transform transition border-b-4 border-blue-900 text-white py-2 px-4 rounded-full" id='barbarian' value='Barbarian'> 
                 </form>
             </div>
 
-        <div id="mapid" class='float-child2'></div>
+        <div id="mapid" class="float-child2 sm:mx-25 md:mx-30 lg:mx-35 xl:mx-40 2xl:mx-45"></div>
 
     </div>
     

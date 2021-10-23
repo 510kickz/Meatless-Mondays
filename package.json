@@ -1,0 +1,24 @@
+{
+  "name": "vegan-resturants",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "allResturants.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/510kickz/Meatless-Mondays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/510kickz/Meatless-Mondays/issues"
+  },
+  "homepage": "https://github.com/510kickz/Meatless-Mondays#readme",
+  "dependencies": {
+    "firebase": "^9.1.3"
+  }
+}
